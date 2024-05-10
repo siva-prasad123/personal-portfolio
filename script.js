@@ -15,18 +15,6 @@ $(document).ready(function(){
         }
     });
 
-        $("#read-more-btn").click(function(e) {
-        e.preventDefault(); // Prevent default link behavior
-        
-        // Toggle visibility of skills and tools sections
-        $(".skills-content, .tools-content").toggle();
-
-        // Toggle button text
-        $(this).text(function(i, text) {
-            return text === "Skills" ? "Tools" : "Skills";
-        });
-    });
-
     
     $("#download-cv").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
