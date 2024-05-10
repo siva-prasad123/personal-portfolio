@@ -222,7 +222,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who I Am";
 }
 .about .about-content .left{
     width: 45%;
@@ -276,7 +276,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "What I Worked On";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -313,7 +313,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "What I Know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -386,10 +386,10 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
+.tools .title::after{
     content: "who with me";
 }
-.teams .carousel .card{
+.tools .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -397,25 +397,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.tools .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.tools .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.tools .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.tools .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.tools .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -423,7 +423,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.tools .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
