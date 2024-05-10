@@ -15,8 +15,6 @@ $(document).ready(function(){
         }
     });
 
-$(document).ready(function(){
-    // Flag to track the current state
     var isSkillsDisplayed = true;
 
     // Function to handle "Read more" button click
@@ -35,9 +33,6 @@ $(document).ready(function(){
         }
         isSkillsDisplayed = !isSkillsDisplayed;
     });
-
-    // Other existing code...
-});
 
     
     $("#download-cv").click(function(e) {
