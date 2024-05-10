@@ -42,7 +42,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .tools, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -265,16 +265,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .tools{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.tools .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.tools .title::after{
     background: #111;
     content: "What I Worked On";
 }
@@ -390,7 +390,7 @@ section .title::after{
     content: "who with me";
 }
 .tools .carousel .card{
-    background: #222;
+    background: #111;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
