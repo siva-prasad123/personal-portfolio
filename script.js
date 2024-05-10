@@ -15,6 +15,18 @@ $(document).ready(function(){
         }
     });
 
+    $("#read-more-btn").click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        
+        // Toggle message visibility
+        $(".message").toggle();
+
+        // Toggle button text
+        $(this).text(function(i, text) {
+            return text === "Read more" ? "Show less" : "Read more";
+        });
+    });
+    
     
     $("#download-cv").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
