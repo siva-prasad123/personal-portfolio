@@ -15,7 +15,23 @@ $(document).ready(function(){
         }
     });
 
-        $("#download-cv").click(function(e) {
+    $("#read-more-btn").click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        // Replace skills content
+        $("#skills-content .column.left .text").text("Tools");
+        $("#skills-content .column.left p").text("Some other data here.");
+        // Replace right column skills
+        // Example:
+        $("#skills-content .column.right .bars").html(`
+            <div class="info">
+                <span>Tool 1</span>
+                <span>Tool 2</span>
+                <!-- Add more tool skills here -->
+            </div>
+        `);
+    });
+    
+    $("#download-cv").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
         // Change the URL to the location of your CV file
         var cvUrl = "Siva_Prasad_Resume.pdf"; // Update with your CV file URL
