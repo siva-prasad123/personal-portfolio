@@ -15,6 +15,20 @@ $(document).ready(function(){
         }
     });
 
+        $("#download-cv").click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        // Change the URL to the location of your CV file
+        var cvUrl = "path/to/your/cv.pdf"; // Update with your CV file URL
+        // Create a temporary anchor element and set its href to the CV URL
+        var link = document.createElement("a");
+        link.href = cvUrl;
+        link.download = "Your_CV.pdf"; // Set the desired file name
+        // Trigger the click event on the anchor element to start the download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link); // Remove the temporary anchor element
+    });
+    
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
