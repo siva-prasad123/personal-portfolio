@@ -17,6 +17,25 @@ html{
     align-items: flex-start;
     margin-top: 50px;
 }
+.tools-content .column {
+    width: 48%;
+    margin-right: 2%;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.tools-content .column.left {
+    margin-right: 0;
+}
+
+.tools-content .info {
+    margin-top: 20px;
+}
+
+.tools-content .info .row {
+    margin-bottom: 10px;
+}
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
