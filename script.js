@@ -15,23 +15,16 @@ $(document).ready(function(){
         }
     });
 
-    var isSkillsDisplayed = true;
-
-    // Function to handle "Read more" button click
-    $("#read-more-btn").click(function(e) {
+        $("#read-more-btn").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
         
         // Toggle visibility of skills and tools sections
-        $(".skills-content").toggle();
-        $(".tools-content").toggle();
+        $(".skills-content, .tools-content").toggle();
 
         // Toggle button text
-        if (isSkillsDisplayed) {
-            $(this).text("Tools");
-        } else {
-            $(this).text("Skills");
-        }
-        isSkillsDisplayed = !isSkillsDisplayed;
+        $(this).text(function(i, text) {
+            return text === "Skills" ? "Tools" : "Skills";
+        });
     });
 
     
