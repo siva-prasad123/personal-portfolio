@@ -23,7 +23,7 @@ $(document).ready(function(){
 
         // Toggle button text
         $(this).text(function(i, text) {
-            return text === "Read more" ? "Show less" : "Read more";
+            return text === "Read more" ? "Read more" : "Show less";
         });
     });
     
