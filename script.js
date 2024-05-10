@@ -18,7 +18,7 @@ $(document).ready(function(){
         $("#download-cv").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
         // Change the URL to the location of your CV file
-        var cvUrl = "path/to/your/cv.pdf"; // Update with your CV file URL
+        var cvUrl = "Siva_Prasad_Resume.pdf"; // Update with your CV file URL
         // Create a temporary anchor element and set its href to the CV URL
         var link = document.createElement("a");
         link.href = cvUrl;
