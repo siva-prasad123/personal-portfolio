@@ -15,21 +15,30 @@ $(document).ready(function(){
         }
     });
 
+$(document).ready(function(){
+    // Flag to track the current state
+    var isSkillsDisplayed = true;
+
+    // Function to handle "Read more" button click
     $("#read-more-btn").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
-        // Replace skills content
-        $("#skills-content .column.left .text").text("Tools");
-        $("#skills-content .column.left p").text("Some other data here.");
-        // Replace right column skills
-        // Example:
-        $("#skills-content .column.right .bars").html(`
-            <div class="info">
-                <span>Tool 1</span>
-                <span>Tool 2</span>
-                <!-- Add more tool skills here -->
-            </div>
-        `);
+        
+        // Toggle visibility of skills and tools sections
+        $(".skills-content").toggle();
+        $(".tools-content").toggle();
+
+        // Toggle button text
+        if (isSkillsDisplayed) {
+            $(this).text("Tools");
+        } else {
+            $(this).text("Skills");
+        }
+        isSkillsDisplayed = !isSkillsDisplayed;
     });
+
+    // Other existing code...
+});
+
     
     $("#download-cv").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
