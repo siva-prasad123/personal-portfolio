@@ -22,7 +22,7 @@ $(document).ready(function(){
         // Create a temporary anchor element and set its href to the CV URL
         var link = document.createElement("a");
         link.href = cvUrl;
-        link.download = "Your_CV.pdf"; // Set the desired file name
+        link.download = "Siva_Prasad_CV.pdf"; // Set the desired file name
         // Trigger the click event on the anchor element to start the download
         document.body.appendChild(link);
         link.click();
