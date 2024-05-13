@@ -15,6 +15,30 @@ $(document).ready(function(){
         }
     });
 
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Gather form data
+    let formData = new FormData(this);
+
+    // You can add any client-side validation here if needed
+
+    // Display message below the button
+    let messageElement = document.getElementById('message');
+    messageElement.textContent = 'Message sent successfully!'; // Change this message as needed
+    messageElement.style.color = 'green'; // Change the color if desired
+
+    // Clear the form fields if needed
+    this.reset();
+
+    // Scroll to the message
+    messageElement.scrollIntoView({ behavior: 'smooth' });
+
+    // You can also display an alert message
+    alert('Message sent successfully!'); // Uncomment this line if you want to display an alert
+});
+
+    
     $("#read-more-btn").click(function(e) {
         e.preventDefault(); // Prevent default link behavior
         
