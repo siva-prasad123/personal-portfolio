@@ -34,7 +34,7 @@ $(document).ready(function(){
     // Scroll to the message
     messageElement.scrollIntoView({ behavior: 'smooth' });
     // You can also display an alert message
-    alert("This is just for a demo purpose. You can contact me through below mail\n perlasivaprasad2@gmail.com \n" ); // Uncomment this line if you want to display an alert
+    alert("This is for a demo purpose. You can contact me through below mail\nperlasivaprasad2@gmail.com \n" ); // Uncomment this line if you want to display an alert
 });
 
     
