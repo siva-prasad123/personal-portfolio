@@ -33,9 +33,8 @@ $(document).ready(function(){
 
     // Scroll to the message
     messageElement.scrollIntoView({ behavior: 'smooth' });
-    messageElement.textContent2 = "perlasivaprasad2@gmail.com"; 
     // You can also display an alert message
-    alert("This is just for a demo purpose. You can contact me through this mails " + messageElement.textContent2); // Uncomment this line if you want to display an alert
+    alert("This is just for a demo purpose. You can contact me through below mail\n perlasivaprasad2@gmail.com \n" ); // Uncomment this line if you want to display an alert
 });
 
     
